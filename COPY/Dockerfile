@@ -1,5 +1,11 @@
-FROM almalinux:9
+
+
+
+FROM almalinux
+
 RUN dnf install nginx -y
-CMD ["nginx", "-g","daemon off;"]
-RUN rm -rf /usr/share/nginx/html/index.html
-COPY index.html /usr/share/nginx/html/index.html
+
+CMD ["nginx","-g","daemon off;"]
+RUN /usr/share/nginx/html/index.html
+COPY index.html  /usr/share/nginx/html/index.html
+
