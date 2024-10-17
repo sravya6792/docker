@@ -10,5 +10,5 @@ ARG course1=devops
 RUN echo "$course1"
 
 RUN mkdir /tmp/app
-cd /tmp/app
+WORKDIR /tmp/app
 RUN echo "hi" >hello.txt
