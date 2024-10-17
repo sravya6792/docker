@@ -6,7 +6,7 @@ RUN mkdir /app2/tmp
 WORKDIR /app2/tmp
 
 # Copy the Java program into the container
-COPY HelloWorld.java /app2/tmp
+COPY HelloWorld.java .
 
 
 # Compile the Java program
