@@ -3,6 +3,7 @@
 FROM openjdk:latest
 
 # Set the working directory
+RUN mkdir app2
 WORKDIR /app2
 
 # Copy the Java program into the container
