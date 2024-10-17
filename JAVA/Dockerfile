@@ -1,4 +1,4 @@
-FROM jdk
+FROM openjdk:11-jre-slim
 RUN mkdir /app
 WORKDIR /app
 RUN pwd
