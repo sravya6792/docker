@@ -16,10 +16,9 @@ RUN javac HelloWorld.java
 FROM openjdk:11-jre-slim
 
 # Set the working directory
-WORKDIR /app
 
-# Copy the compiled Java program from the builder stage
-COPY --from=builder /app/HelloWorld.class .
+
+# Copy the compiled Java program from the builder sta
 
 # Command to run the Java program
 CMD ["java", "HelloWorld"]
