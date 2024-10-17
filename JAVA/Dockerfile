@@ -3,11 +3,11 @@
 FROM openjdk:latest
 
 # Set the working directory
-RUN mkdir app2
+RUN mkdir /app2
 WORKDIR /app2
 
 # Copy the Java program into the container
-COPY HelloWorld.java .
+COPY HelloWorld.java /app2
 
 # Compile the Java program
 RUN javac HelloWorld.java
