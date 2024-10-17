@@ -1,6 +1,7 @@
-
 FROM almalinux
 
-ENV course="devops"
+RUN dnf install nginx -y
 
-CMD["sleep","100"]
+CMD ["nginx","-g","daemon off;"]
+
+ENV course="aws"
