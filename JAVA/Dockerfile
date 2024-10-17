@@ -6,7 +6,7 @@ RUN mkdir /app
 WORKDIR /app
 
 # Copy the Java program into the container
-COPY HelloWorld.java .
+COPY HelloWorld.java /app
 
 # Compile the Java program
 RUN javac HelloWorld.java
