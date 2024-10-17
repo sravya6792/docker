@@ -3,7 +3,7 @@
 FROM openjdk:11-jre-slim
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /app1
 
 # Copy the Java program into the container
 COPY HelloWorld.java .
