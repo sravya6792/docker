@@ -1,4 +1,4 @@
 
 FROM almalinux
 
-CMD ["ping","google.com"]
+CMD ["ping"]
