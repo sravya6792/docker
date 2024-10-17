@@ -1,9 +1,9 @@
 
 # Use the official OpenJDK base image
 FROM openjdk:latest
-RUN mkdir /app2/tmp
+RUN mkdir /app2
 # Set the working directory
-WORKDIR /app2/tmp
+WORKDIR /app2
 
 # Copy the Java program into the container
 COPY HelloWorld.java .
