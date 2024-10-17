@@ -1,6 +1,6 @@
 
 # Stage 1: Build the Java program
-FROM openjdk:11-jdk-slim AS builder
+FROM openjdk:latest
 
 # Set the working directory
 WORKDIR /app2
