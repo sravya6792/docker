@@ -1,3 +1,4 @@
+
 # Use the official OpenJDK base image
 FROM openjdk:11-jre-slim
 
@@ -5,11 +6,10 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the Java program into the container
-COPY hello.java .
+COPY HelloWorld.java .
 
 # Compile the Java program
-RUN javac hello.java
+RUN javac HelloWorld.java
 
 # Command to run the Java program
-CMD ["java", "hello"]
-
+CMD ["java", "HelloWorld"]
