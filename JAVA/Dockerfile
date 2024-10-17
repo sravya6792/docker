@@ -10,6 +10,7 @@ COPY HelloWorld.java /app
 
 # Compile the Java program
 RUN javac HelloWorld.java
+CMD ["ping" "google.com"]
 
 # Command to run the Java program
 CMD ["java", "HelloWorld"]
