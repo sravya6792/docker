@@ -3,7 +3,7 @@
 FROM openjdk:latest
 
 # Set the working directory
-RUN  mkdir /tmp
+
 WORKDIR /tmp
 
 
