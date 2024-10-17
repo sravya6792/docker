@@ -3,7 +3,9 @@
 FROM openjdk:latest
 
 # Set the working directory
-WORKDIR /app1
+RUN  mkdir /tmp
+WORKDIR /tmp
+
 
 # Copy the Java program into the container
 COPY HelloWorld.java .
