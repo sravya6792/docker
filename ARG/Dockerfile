@@ -6,3 +6,5 @@ CMD ["nginx","-g","daemon off;"]
 
 ENV course="aws"
 RUN echo "$course"
+ARG course1=devops
+RUN echo "$course1"
