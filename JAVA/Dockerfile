@@ -1,7 +1,15 @@
+# Use the official OpenJDK base image
 FROM openjdk:11-jre-slim
-RUN mkdir /app
+
+# Set the working directory
 WORKDIR /app
-RUN pwd
+
+# Copy the Java program into the container
 COPY hello.java .
+
+# Compile the Java program
 RUN javac hello.java
-CMD ["java","hello"]
+
+# Command to run the Java program
+CMD ["java", "hello"]
+
