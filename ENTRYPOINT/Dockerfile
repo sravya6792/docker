@@ -1,4 +1,4 @@
 
 FROM almalinux
-CMD ["ping"]
-ENTRYPOINT ["facebook.com"]
+CMD ["facebook"]
+ENTRYPOINT ["ping"]
