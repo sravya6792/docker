@@ -1,4 +1,8 @@
+# Use a lightweight base image
+FROM alpine:latest
 
-# Use the official OpenJDK base image
-FROM openjdk:latest
+# Set the working directory in the container
+WORKDIR /app
 
+# Use CMD to run a shell command
+CMD ["date"]
