@@ -1,6 +1,8 @@
 # Use a lightweight base image
 FROM alpine:latest
 
+RUN mkdir /app
+
 # Set the working directory in the container
 WORKDIR /app
 
