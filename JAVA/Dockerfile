@@ -8,5 +8,5 @@ WORKDIR /app
 # COPY your-file.txt .
 
 # Use CMD to run a shell
-CMD ["/bin/sh"]
+CMD ["date"]
 
