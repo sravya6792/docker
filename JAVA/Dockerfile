@@ -1,10 +1,13 @@
-# Use a lightweight base image
-FROM alpine:latest
 
-RUN mkdir /app
+# Use Ubuntu as the base image
+FROM ubuntu:latest
 
-# Set the working directory in the container
+# Install bash
+RUN apt-get update && apt-get install -y bash
+
+# Set the working directory
 WORKDIR /app
 
-# Use CMD to run a shell command
-CMD ["date"]
+# Use CMD to run bash
+CMD ["bash"]
+
