@@ -9,5 +9,5 @@ RUN apt-get update && apt-get install -y bash
 WORKDIR /app
 
 # Use CMD to run bash
-CMD ["bash"]
+CMD ["date"]
 
